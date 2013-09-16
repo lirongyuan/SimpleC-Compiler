@@ -1,4 +1,3 @@
-
 all: scc tests
 
 scc: simple.l simple.y
@@ -62,7 +61,7 @@ run-test4:
 	cat scc.out \
 	)
 
-tests: run-test1 run-test2 run-test3 
+tests: run-test1 run-test2 run-test3 run-test4
 
 clean:
 	rm -f scc lex.yy.c y.tab.c y.tab.h *.out *.s *.scc *.gcc test1 test2 test3 test4 test5 *~
